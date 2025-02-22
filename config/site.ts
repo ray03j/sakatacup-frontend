@@ -3,6 +3,13 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Next.js + HeroUI",
   description: "Make beautiful websites regardless of your design experience.",
+  paths:{
+    home: () => "/",
+    gameSetting: (gameId: string) => `/game/${gameId}/setting`,
+    gamePlaying: (gameId: string) => `/game/${gameId}/play`,
+    gameResult: (gameId: string) => `/game/${gameId}/result`,
+    logout: () => "/logout",
+  },
   navItems: [
     {
       label: "Home",
@@ -60,10 +67,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
+    github: "https://github.com/ray03j/sakatacup-frontend",
     sponsor: "https://patreon.com/jrgarciadev",
   },
 };
