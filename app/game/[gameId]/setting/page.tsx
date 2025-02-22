@@ -1,9 +1,9 @@
-import { title } from "@/components/primitives";
+import { GameSettingPage } from "@/components/game-setting";
 
-export default function GameSettingPage() {
+export default function Page() {
   return (
     <div>
-      <h1 className={title()}>Game Setting</h1>
+      <GameSettingPage />
     </div>
   );
 }
